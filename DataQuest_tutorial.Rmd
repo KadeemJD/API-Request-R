@@ -1,0 +1,32 @@
+---
+title: "DataQuest_tutorial"
+author: "Kadeem Daniels"
+date: "2025-08-28"
+output: html_document
+---
+
+
+```{r, warning=FALSE, message=FALSE}
+install.packages("httr")
+library(httr)
+install.packages("jsonlite")
+library(jsonlite)
+```
+```{r}
+ls("package:httr")
+```
+
+
+
+
+```{r}
+res = GET("https://api.open-notify.org/astros.json")
+```
+
+
+
+```{r}
+res
+```
+
+
